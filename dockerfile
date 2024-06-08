@@ -11,13 +11,13 @@ RUN sudo mkdir -p /usr/local/tomcat/webapps
 RUN sudo mkdir -p /usr/local/tomcat/conf
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-RUN sudo cp -r tomcat/webapps /usr/local/tomcat/webapps
+sudo cp -r tomcat/webapps /usr/local/tomcat/webapps
 
 # Copie os logs para o diretório logs do Tomcat
 # COPY ./tomcat/logs /home/ubuntu/tomcat/logs
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-RUN sudo cp -r tomcat/conf /usr/local/tomcat/conf
+sudo cp -r tomcat/conf /usr/local/tomcat/conf
 
 # Exponha as portas necessárias
 EXPOSE 8080
