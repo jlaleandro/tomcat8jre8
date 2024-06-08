@@ -11,7 +11,8 @@ RUN mkdir -p /usr/local/tomcat/webapps
 RUN mkdir -p /usr/local/tomcat/conf
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-RUN  cp -r ~/tomcat8jre8/tomcat/webapps /usr/local/tomcat/webapps
+# RUN  cp -r ~/tomcat8jre8/tomcat/webapps /usr/local/tomcat/webapps
+RUN  cp -r home/ubuntu/tomcat8jre8/tomcat/webapps/*.* /usr/local/tomcat/webapps
 
 # Copie os logs para o diretório logs do Tomcat
 # RUN COPY ./tomcat/logs /home/ubuntu/tomcat/logs
