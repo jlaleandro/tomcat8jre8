@@ -4,11 +4,11 @@ FROM tomcat:8.5.70-jre8
 # Defina variáveis de ambiente para o Tomcat
 # ENV TOMCAT_USERNAME 
 # ENV TOMCAT_PASSWORD 
-WORKDIR tomcat
+# WORKDIR tomcat
 # Crie um diretório de logs, se necessário
 # RUN sudo mkdir -p /usr/local/tomcat/logs
-RUN mkdir -p /usr/local/tomcat/webapps
-RUN mkdir -p /usr/local/tomcat/conf
+# RUN mkdir -p /usr/local/tomcat/webapps
+# RUN mkdir -p /usr/local/tomcat/conf
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
 # RUN  cp -r ~/tomcat8jre8/tomcat/webapps /usr/local/tomcat/webapps
