@@ -18,5 +18,5 @@
 
   <!-- Define a user with manager-gui and manager-script roles -->
   <!-- <user username="manager" password="password" roles="manager-gui,manager-script"/> -->
-
+<!-- teste -->
 </tomcat-users>
