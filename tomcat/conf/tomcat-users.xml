@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomcat-users xmlns="http://tomcat.apache.org/xml"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://tomcat.apache.org/xml tomcat-users.xsd"
+              version="1.0">
+              
+  <!-- Define a user with manager-gui role -->
+  <!-- <user username="admin" password="admin" roles="manager-gui"/> -->
+
+  <!-- Define a user with both manager-gui and admin-gui roles -->
+  <!-- <user username="admin" password="admin" roles="manager-gui,admin-gui"/> -->
+
+  <!-- Define a user with only admin-gui role -->
+  <!-- <user username="admin2" password="admin2" roles="admin-gui"/> -->
+  
+  <!-- Define a user with both manager-script and manager-status roles -->
+  <!-- <user username="scriptUser" password="s3cret" roles="manager-script,manager-status"/> -->
+
+  <!-- Define a user with manager-gui and manager-script roles -->
+  <!-- <user username="manager" password="password" roles="manager-gui,manager-script"/> -->
+
+</tomcat-users>
