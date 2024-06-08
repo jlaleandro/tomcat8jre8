@@ -7,8 +7,8 @@ FROM tomcat:8.5.70-jre8
 
 # Crie um diretório de logs, se necessário
 # RUN sudo mkdir -p /usr/local/tomcat/logs
-mkdir -p /usr/local/tomcat/webapps
-sudo mkdir -p /usr/local/tomcat/conf
+RUN mkdir -p /usr/local/tomcat/webapps
+RUN mkdir -p /usr/local/tomcat/conf
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
 RUN  cp -r tomcat/webapps /usr/local/tomcat/webapps
