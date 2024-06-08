@@ -6,13 +6,13 @@ FROM tomcat:8.5.70-jre8
 # ENV TOMCAT_PASSWORD 
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-COPY ./tomcat/webapps /usr/local/tomcat/webapps
+COPY ./tomcat/webapps /home/ubuntu/tomcat/webapps
 
 # Copie os logs para o diretório logs do Tomcat
-COPY ./tomcat/logs /usr/local/tomcat/logs
+COPY ./tomcat/logs /home/ubuntu/tomcat/logs
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-COPY ./tomcat/conf /usr/local/tomcat/conf
+COPY ./tomcat/conf /home/ubuntu/tomcat/conf
 
 # Exponha as portas necessárias
 EXPOSE 8080
