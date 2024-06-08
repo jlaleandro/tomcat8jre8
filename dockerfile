@@ -6,18 +6,18 @@ FROM tomcat:8.5.70-jre8
 # ENV TOMCAT_PASSWORD 
 
 # Crie um diretório de logs, se necessário
-RUN sudo mkdir -p /usr/local/tomcat/logs
-RUN sudo mkdir -p /usr/local/tomcat/logs
-RUN sudo mkdir -p /usr/local/tomcat/logs
+#RUN sudo mkdir -p /usr/local/tomcat/logs
+RUN sudo mkdir -p /usr/local/tomcat/webapps
+RUN sudo mkdir -p /usr/local/tomcat/conf
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-COPY ./tomcat/webapps /home/ubuntu/tomcat/webapps
+cp tomcat/webapps /home/ubuntu/tomcat/webapps
 
 # Copie os logs para o diretório logs do Tomcat
-COPY ./tomcat/logs /home/ubuntu/tomcat/logs
+# COPY ./tomcat/logs /home/ubuntu/tomcat/logs
 
 # Copie os aplicativos web para o diretório webapps do Tomcat
-COPY ./tomcat/conf /home/ubuntu/tomcat/conf
+cp tomcat/conf /home/ubuntu/tomcat/conf
 
 # Exponha as portas necessárias
 EXPOSE 8080
