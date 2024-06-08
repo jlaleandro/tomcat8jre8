@@ -18,6 +18,7 @@ FROM tomcat:8.5.70-jre8
 COPY conf/tomcat-users.xml /usr/local/tomcat/conf
 COPY webapps/probejla.war /usr/local/tomcat/webapps
 
+VOLUME webapps
 # Copie os logs para o diretório logs do Tomcat
 # RUN COPY ./tomcat/logs /home/ubuntu/tomcat/logs
 
