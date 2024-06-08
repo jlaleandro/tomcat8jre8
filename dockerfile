@@ -6,7 +6,7 @@ FROM tomcat:8.5.70-jre8
 # ENV TOMCAT_PASSWORD 
 
 # Crie um diretório de logs, se necessário
-RUN sudo mkdir -p /usr/local/tomcat/logs
+# RUN sudo mkdir -p /usr/local/tomcat/logs
 RUN sudo mkdir -p /usr/local/tomcat/webapps
 RUN sudo mkdir -p /usr/local/tomcat/conf
 
