@@ -9,9 +9,9 @@ services:
       - TOMCAT_USERNAME=x
       - TOMCAT_PASSWORD=x
     volumes:
-      - ./tomcat/webapps:/usr/local/tomcat/webapps  
-      - ./tomcat/conf:/usr/local/tomcat/conf
-      - ./tomcat/logs:/usr/local/tomcat/logs
+      - ./tomcat/webapps:/home/ubuntu/tomcat/webapps  
+      # - ./tomcat/conf:/usr/local/tomcat/conf
+      # - ./tomcat/logs:/usr/local/tomcat/logs
       
     ports:
       - 80:8080
