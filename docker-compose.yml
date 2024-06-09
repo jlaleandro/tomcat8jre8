@@ -1,4 +1,4 @@
-version: '3.4'
+version: '3'
 
 services:
 
@@ -9,7 +9,7 @@ services:
       - TOMCAT_USERNAME=x
       - TOMCAT_PASSWORD=x
     volumes:
-      - ./tomcat/webapps:/home/ubuntu/tomcat/webapps  
+      # - ./tomcat/webapps:/home/ubuntu/tomcat/webapps  
       # - ./tomcat/conf:/usr/local/tomcat/conf
       # - ./tomcat/logs:/usr/local/tomcat/logs
       
