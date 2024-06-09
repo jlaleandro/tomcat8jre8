@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
 
@@ -11,8 +11,7 @@ services:
     volumes:
       - ./tomcat/webapps:/usr/local/tomcat/webapps  
       - ./tomcat/conf:/usr/local/tomcat/conf
-      - ./tomcat/logs:/usr/local/tomcat/logs
-      
+      - ./tomcat/logs:/usr/local/tomcat/logs  
     ports:
       - 80:8080
       - 443:8443
