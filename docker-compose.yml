@@ -1,17 +1,15 @@
-version: '3.8'
 
 services:
-
   tomcat-container:
     container_name: tomcat-container
     image: tomcat:8.5.70-jre8
     environment:
-      - TOMCAT_USERNAME=x
-      - TOMCAT_PASSWORD=x
+      - TOMCAT_USERNAME=xxxxxx
+      - TOMCAT_PASSWORD=xxxxxxxx
     volumes:
-      - ./tomcat/webapps:/usr/local/tomcat/webapps  
-      - ./tomcat/conf:/usr/local/tomcat/conf
-      - ./tomcat/logs:/usr/local/tomcat/logs  
+      - tomcat/webapps:/usr/local/tomcat/webapps  
+      - tomcat/conf:/usr/local/tomcat/conf
+      - tomcat/logs:/usr/local/tomcat/logs  
     ports:
       - 8080:80
     restart: always
