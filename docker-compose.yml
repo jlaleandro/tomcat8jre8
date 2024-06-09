@@ -13,7 +13,5 @@ services:
       - ./tomcat/conf:/usr/local/tomcat/conf
       - ./tomcat/logs:/usr/local/tomcat/logs  
     ports:
-      - 80:8080
-      - 443:8443
+      - 8080:80
     restart: always
-
