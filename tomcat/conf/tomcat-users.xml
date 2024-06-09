@@ -18,5 +18,11 @@
 
   <!-- Define a user with manager-gui and manager-script roles -->
   <!-- <user username="manager" password="password" roles="manager-gui,manager-script"/> -->
-<!-- teste -->
+  <role rolename="manager-gui" />
+  <role rolename="manager-script"/>
+  <role rolename="manaager"/>
+  <role rolename="admin-gui" />
+  <role rolename="admin-script" />
+  <role rolename="admin" />
+  <user username="xxxx"  password="xxxx" roles="manager-gui,admin-gui,manager,admin-gui,manager,admin,manager-script,admin-script" />
 </tomcat-users>
