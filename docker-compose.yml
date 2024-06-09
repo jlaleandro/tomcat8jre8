@@ -8,7 +8,7 @@ services:
     environment:
       - TOMCAT_USERNAME=x
       - TOMCAT_PASSWORD=x
-    volumes:
+    # volumes:
       # - ./tomcat/webapps:/home/ubuntu/tomcat/webapps  
       # - ./tomcat/conf:/usr/local/tomcat/conf
       # - ./tomcat/logs:/usr/local/tomcat/logs
