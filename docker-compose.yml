@@ -10,6 +10,7 @@ services:
     volumes:
       - ./tomcat/webapps:/usr/local/tomcat/webapps  
       - ./tomcat/logs:/usr/local/tomcat/logs
+      - ./tomcat-users.xml:/usr/local/tomcat/conf/tomcat-users.xml
       
     ports:
       - 80:8080
